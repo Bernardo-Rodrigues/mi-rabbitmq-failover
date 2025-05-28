@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <!--
- Copyright (c) 2019, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+ Copyright (c) 2020, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -17,17 +18,15 @@
 <!--
     This is the configuration file for internal APIs
 -->
-<internalApis>
+<internalApis xmlns:svns="http://org.wso2.securevault/configuration">
     <apis>
-        <api name="PrometheusApi" protocol="http"
-             class="org.wso2.micro.integrator.observability.metric.publisher.MetricAPI"/>
+        <api name="PrometheusApi" protocol="http" class="org.wso2.micro.integrator.observability.metric.publisher.MetricAPI">
+        </api>
         <api name="ReadinessProbe" protocol="http" class="org.wso2.micro.integrator.probes.ReadinessProbe"/>
         <api name="LivenessProbe" protocol="http" class="org.wso2.micro.integrator.probes.LivenessProbe"/>
-        <api class="org.wso2.micro.integrator.management.apis.ManagementInternalApi" name="ManagementApi"
-             protocol="https http">
+        <api name="ManagementApi" protocol="https http" class="org.wso2.micro.integrator.management.apis.ManagementInternalApi">
             <handlers>
-                <handler class="org.wso2.micro.integrator.management.apis.security.handler.JWTTokenSecurityHandler"
-                         name="JWTTokenSecurityHandler">
+                <handler name="JWTTokenSecurityHandler" class="org.wso2.micro.integrator.management.apis.security.handler.JWTTokenSecurityHandler">
                     <TokenStoreConfig>
                         <MaxSize>200</MaxSize>
                         <TokenCleanupTaskInterval>600</TokenCleanupTaskInterval><!--Seconds /-->
@@ -38,16 +37,12 @@
                         <size>2048</size>
                     </TokenConfig>
                 </handler>
-                <handler class="org.wso2.micro.integrator.management.apis.security.handler.AuthorizationHandler" name="AuthorizationHandler">
+                <handler name="AuthorizationHandler" class="org.wso2.micro.integrator.management.apis.security.handler.AuthorizationHandler">
                 </handler>
-                <!--handler class="org.wso2.micro.integrator.management.apis.security.handler.BasicSecurityHandler"
-                         name="BasicSecurityHandler">
-                </handler-->
             </handlers>
             <cors>
                 <enabled>true</enabled>
                 <allowedOrigins>*</allowedOrigins>
-                <!-- comma separated values-->
                 <allowedHeaders>Authorization, Content-Type</allowedHeaders>
             </cors>
         </api>
@@ -57,10 +52,14 @@
             <user>
                 <username>admin</username>
                 <password>admin</password>
+                <isAdmin>true</isAdmin>
             </user>
         </users>
     </userStore>
     <sslConfig>
+        <parameter name="httpsProtocols">TLSv1,TLSv1.1,TLSv1.2</parameter>
+        <parameter name="sslVerifyClient">false</parameter>
+        <parameter name="sslProtocol">SSLV3</parameter>
         <parameter name="keystore">
             <KeyStore>
                 <Location>repository/resources/security/wso2carbon.jks</Location>
@@ -76,9 +75,6 @@
                 <Password>wso2carbon</Password>
             </TrustStore>
         </parameter>
-        <parameter name="sslVerifyClient">false</parameter>
-        <parameter name="httpsProtocols">TLSv1,TLSv1.1,TLSv1.2</parameter>
-        <parameter name="sslProtocol">SSLV3</parameter>
         <parameter name="certificateRevocationVerifier">
             <CertificateRevocationVerifier enable="false">
                 <CacheSize>10</CacheSize>

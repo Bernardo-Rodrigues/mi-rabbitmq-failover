@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="rabbitmqfailover" version="1.0.0" type="carbon/application">
+        <dependency artifact="PublishToRabbitMQ" version="1.0.0" include="true" serverRole="EnterpriseIntegrator"/>
+        <dependency artifact="config" version="1.0.0" include="true" serverRole="EnterpriseIntegrator"/>
+        <dependency artifact="mi-connector-http" version="0.1.11" include="true" serverRole="EnterpriseIntegrator"/>
+        <dependency artifact="PublishToRabbitMQ_proxy_metadata" version="1.0.0" include="true" serverRole="EnterpriseIntegrator"/>
+    </artifact>
+</artifacts>
