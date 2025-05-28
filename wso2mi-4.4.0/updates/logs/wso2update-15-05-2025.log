@@ -1,0 +1,413 @@
+[15-05-2025 15:06:49] DEBUG - Updates config file does not exist. Creating config.json
+[15-05-2025 15:06:49] DEBUG - Updates Home Directory: /root/.wso2-updates
+[15-05-2025 15:06:49] DEBUG - Product name: wso2mi
+[15-05-2025 15:06:49] DEBUG - Product version: 4.4.0
+[15-05-2025 15:06:49] DEBUG - Updates configurations written to /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/updates/config.json
+[15-05-2025 15:06:49] DEBUG - wso2update version: 1.7.15
+[15-05-2025 15:06:49] DEBUG - Executed wso2update on Thu, 15 May 2025 15:06:49 UTC
+
+[15-05-2025 15:06:49] DEBUG - Product Directory : /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0
+[15-05-2025 15:06:49] DEBUG - Product Updates Directory : /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/updates
+[15-05-2025 15:06:49] DEBUG - Updates home directory has been set manually
+[15-05-2025 15:06:49] DEBUG - Updates home directory: /root/.wso2-updates
+[15-05-2025 15:06:49] DEBUG - Updates configurations written to /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/updates/config.json
+[15-05-2025 15:06:49] INFO - Initializing updates with credentials
+[15-05-2025 15:06:49] INFO - Authenticating
+[15-05-2025 15:06:49] DEBUG - Invoking WSO2 Update token API
+[15-05-2025 15:06:51] DEBUG - Token invoked with status code 200.
+[15-05-2025 15:06:51] DEBUG - Updates configurations written to /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/updates/config.json
+[15-05-2025 15:06:51] INFO - Authenticated user updatecreator@wso2.com
+[15-05-2025 15:06:51] INFO - Checking for latest update tool version
+[15-05-2025 15:06:51] DEBUG - Update tool download link: https://product-dist.wso2.com/downloads/update-tool/release/update.zip
+[15-05-2025 15:06:51] INFO - A new update is available
+[15-05-2025 15:06:51] INFO - Attempting to download and update the WSO2 Update Tool
+[15-05-2025 15:06:51] DEBUG - Deleting directory /root/.wso2-updates/updates/client
+[15-05-2025 15:06:51] DEBUG - Deleting directory /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/.tmp
+[15-05-2025 15:06:51] DEBUG - Unarchiving /root/.wso2-updates/updates/client/update.zip to /root/.wso2-updates/updates/client
+[15-05-2025 15:06:51] DEBUG - Unarchiving /root/.wso2-updates/updates/client/update.zip to /root/.wso2-updates/updates/client completed successfully
+[15-05-2025 15:06:51] DEBUG - Deleting directory /root/.wso2-updates/updates/client
+[15-05-2025 15:06:51] DEBUG - wso2update version: 1.7.20
+[15-05-2025 15:06:51] DEBUG - Executed wso2update on Thu, 15 May 2025 15:06:51 UTC
+
+[15-05-2025 15:06:51] DEBUG - Product Directory : /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0
+[15-05-2025 15:06:51] DEBUG - Product Updates Directory : /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/updates
+[15-05-2025 15:06:51] INFO - Initializing updates with credentials
+[15-05-2025 15:06:51] INFO - Authenticating
+[15-05-2025 15:06:51] DEBUG - Invoking WSO2 Update token API
+[15-05-2025 15:06:52] DEBUG - Token invoked with status code 200.
+[15-05-2025 15:06:52] DEBUG - Updates configurations written to /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/updates/config.json
+[15-05-2025 15:06:52] INFO - Authenticated user updatecreator@wso2.com
+[15-05-2025 15:06:52] INFO - Checking for latest update tool version
+[15-05-2025 15:06:52] DEBUG - Get compatibility API URL: https://api.updates.wso2.com/updates/1.0.0/compatibility/update-tool/1.7.20?product-name=wso2mi&product-base-version=4.4.0&os=linux&arch=amd64
+[15-05-2025 15:06:52] DEBUG - Checking for the latest update tool client completed successfully
+[15-05-2025 15:06:52] DEBUG - Skipping migration check
+[15-05-2025 15:06:52] INFO - Checking updates for product wso2mi-4.4.0 from update level -1
+[15-05-2025 15:06:52] INFO - Checking updates for 'wso2mi-4.4.0' via 'full' channel
+[15-05-2025 15:06:52] INFO - Checking for updates
+[15-05-2025 15:06:52] DEBUG - Check updates API URL: https://api.updates.wso2.com/updates/1.0.0/check-updates
+[15-05-2025 15:06:52] INFO - The latest update level is 'wso2mi-4.4.0.9'. 
+This consists of 20 updates applied on top of 'wso2mi-4.4.0.0'
+[15-05-2025 15:06:52] INFO - [WARNING] 
+ The update level 'wso2mi-4.4.0.9' consists of 2 critical security updates applied on top of 'wso2mi-4.4.0.0'. 
+WSO2 strongly recommends to use 'wso2mi-4.4.0.9' distribution in production as soon as possible.
+[15-05-2025 15:06:52] DEBUG - wso2update version: 1.7.20
+[15-05-2025 15:06:52] DEBUG - Executed wso2update on Thu, 15 May 2025 15:06:52 UTC
+
+[15-05-2025 15:06:52] DEBUG - Product Directory : /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0
+[15-05-2025 15:06:52] DEBUG - Product Updates Directory : /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/updates
+[15-05-2025 15:06:52] INFO - Initializing updates with credentials
+[15-05-2025 15:06:52] INFO - Authenticating
+[15-05-2025 15:06:52] DEBUG - Invoking WSO2 Update token API
+[15-05-2025 15:06:53] DEBUG - Token invoked with status code 200.
+[15-05-2025 15:06:53] DEBUG - Updates configurations written to /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/updates/config.json
+[15-05-2025 15:06:53] INFO - Authenticated user updatecreator@wso2.com
+[15-05-2025 15:06:53] INFO - Checking for latest update tool version
+[15-05-2025 15:06:53] DEBUG - Get compatibility API URL: https://api.updates.wso2.com/updates/1.0.0/compatibility/update-tool/1.7.20?product-name=wso2mi&product-base-version=4.4.0&os=linux&arch=amd64
+[15-05-2025 15:06:53] DEBUG - Checking for the latest update tool client completed successfully
+[15-05-2025 15:06:53] DEBUG - Skipping migration check
+[15-05-2025 15:06:53] DEBUG - Validating update levels
+[15-05-2025 15:06:53] DEBUG - Update level not defined. Requested update level set to 0. Attempting to fetch latest update.
+[15-05-2025 15:06:53] INFO - Checking for updates
+[15-05-2025 15:06:53] DEBUG - Check updates API URL: https://api.updates.wso2.com/updates/1.0.0/check-updates
+[15-05-2025 15:06:53] INFO - The latest update level is 'wso2mi-4.4.0.9'. 
+This consists of 20 updates applied on top of 'wso2mi-4.4.0.0'
+[15-05-2025 15:06:53] INFO - [WARNING] 
+ The update level 'wso2mi-4.4.0.9' consists of 2 critical security updates applied on top of 'wso2mi-4.4.0.0'. 
+WSO2 strongly recommends to use 'wso2mi-4.4.0.9' distribution in production as soon as possible.
+[15-05-2025 15:06:53] INFO - Creating a backup of '/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0'
+[15-05-2025 15:06:53] DEBUG - Backing up product directory to /root/.wso2-updates/backup/wso2mi-4.4.0-004960f4-18c6-4f26-b8ce-1468cf81a5b5
+[15-05-2025 15:06:53] DEBUG - Validating backup...
+[15-05-2025 15:06:53] DEBUG - Size of product directory: 305800640
+[15-05-2025 15:06:53] DEBUG - Size of backup directory: 305800640
+[15-05-2025 15:06:53] DEBUG - Updates configurations written to /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/updates/config.json
+[15-05-2025 15:06:53] INFO - Successfully created the backup at : /root/.wso2-updates/backup/wso2mi-4.4.0-004960f4-18c6-4f26-b8ce-1468cf81a5b5
+[15-05-2025 15:06:53] DEBUG - Fetching update files
+[15-05-2025 15:06:53] DEBUG - Update file list API URL: https://api.updates.wso2.com/updates/1.0.0/list-updates
+[15-05-2025 15:06:53] DEBUG - Creating update directory
+[15-05-2025 15:06:53] DEBUG - Update download directory: /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9
+[15-05-2025 15:06:53] DEBUG - Update info file: /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/update.json
+[15-05-2025 15:06:53] DEBUG - Applied updates: 12790, 12865, 12847, 12843, 12964, 12962, 12943, 13030, 12963, 12978, 13004, 13079, 13137, 13083, 13250, 13227, 13270, 13283, 13390, 13365
+[15-05-2025 15:06:53] DEBUG - Update information written to /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/update.json
+[15-05-2025 15:06:53] INFO - Downloading updates
+[15-05-2025 15:06:53] DEBUG - Reading update information from file /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/update.json
+[15-05-2025 15:06:53] DEBUG - Normalizing update file paths to OS specific paths
+[15-05-2025 15:06:53] DEBUG - Attempt: 1
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/add/wso2/lib/failureaccess-1.0.2.jar
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/add/wso2/components/plugins/tomcat-servlet-api_9.0.102.wso2v1.jar
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/add/wso2/components/plugins/tomcat-el-api_9.0.102.wso2v1.jar
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/add/wso2/components/plugins/tomcat_9.0.102.wso2v1.jar
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/add/wso2/components/plugins/tomcat-jsp-api_9.0.102.wso2v1.jar
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/add/wso2/components/plugins/okio_3.9.0.wso2v2.jar
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/add/wso2/components/plugins/org.wso2.carbon.transports.sap_4.7.36.1.jar
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/add/wso2/components/plugins/okhttp_4.12.0.wso2v2.jar
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/add/bin/tomcat-juli_9.0.102.jar
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/org.wso2.micro.integrator.mediation.ntask_4.4.0.15.jar
+[15-05-2025 15:06:55] DEBUG - Expected SHA256 value of file did not match. Validating with SHA1 and MD5
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/dbscripts/db2/db2_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/original/dbscripts/db2/db2_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/dbscripts/oracle/oracle_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/original/dbscripts/oracle/oracle_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/dbscripts/mysql/mysql_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/original/dbscripts/mysql/mysql_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/commons-vfs2_2.2.0.wso2v20_2.jar
+[15-05-2025 15:06:55] DEBUG - Expected SHA256 value of file did not match. Validating with SHA1 and MD5
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/org.wso2.micro.integrator.security_4.4.0.11.jar
+[15-05-2025 15:06:55] DEBUG - Expected SHA256 value of file did not match. Validating with SHA1 and MD5
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/synapse-core_4.0.0.wso2v215_7.jar
+[15-05-2025 15:06:55] DEBUG - Expected SHA256 value of file did not match. Validating with SHA1 and MD5
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/org.wso2.micro.integrator.initializer_4.4.0.10.jar
+[15-05-2025 15:06:55] DEBUG - Expected SHA256 value of file did not match. Validating with SHA1 and MD5
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/dbscripts/mssql/mssql_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/original/dbscripts/mssql/mssql_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/dbscripts/oracle-rac/oracle_rac_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/original/dbscripts/oracle-rac/oracle_rac_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/org.wso2.micro.integrator.coordination_4.4.0.15.jar
+[15-05-2025 15:06:55] DEBUG - Expected SHA256 value of file did not match. Validating with SHA1 and MD5
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/org.wso2.micro.integrator.ndatasource.rdbms_4.4.0.8.jar
+[15-05-2025 15:06:55] DEBUG - Expected SHA256 value of file did not match. Validating with SHA1 and MD5
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/dbscripts/postgres/postgresql_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/original/dbscripts/postgres/postgresql_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/synapse-nhttp-transport_4.0.0.wso2v215_8.jar
+[15-05-2025 15:06:55] DEBUG - Expected SHA256 value of file did not match. Validating with SHA1 and MD5
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/org.wso2.micro.integrator.dataservices.core_4.4.0.16.jar
+[15-05-2025 15:06:55] DEBUG - Expected SHA256 value of file did not match. Validating with SHA1 and MD5
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/org.wso2.micro.integrator.ntask.core_4.4.0.15.jar
+[15-05-2025 15:06:55] DEBUG - Expected SHA256 value of file did not match. Validating with SHA1 and MD5
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/org.wso2.micro.integrator.inbound.endpoint_4.4.0.11.jar
+[15-05-2025 15:06:55] DEBUG - Expected SHA256 value of file did not match. Validating with SHA1 and MD5
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/org.wso2.micro.integrator.transport.handlers_4.4.0.10.jar
+[15-05-2025 15:06:55] DEBUG - Expected SHA256 value of file did not match. Validating with SHA1 and MD5
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/lib/org.wso2.ciphertool-1.2.5.1.jar
+[15-05-2025 15:06:55] DEBUG - Expected SHA256 value of file did not match. Validating with SHA1 and MD5
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/org.wso2.carbon.mediator.smooks_4.7.244.2.jar
+[15-05-2025 15:06:55] DEBUG - Expected SHA256 value of file did not match. Validating with SHA1 and MD5
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/org.wso2.micro.integrator.core_4.4.0.10.jar
+[15-05-2025 15:06:55] DEBUG - Expected SHA256 value of file did not match. Validating with SHA1 and MD5
+[15-05-2025 15:06:55] DEBUG - Verification for downloaded files passed.
+[15-05-2025 15:06:55] DEBUG - Applying updates to product at /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0 from updates at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9
+[15-05-2025 15:06:55] INFO - Updating product
+[15-05-2025 15:06:55] DEBUG - Checking for similar added and removed components
+[15-05-2025 15:06:55] DEBUG - Identified added component wso2/components/plugins/tomcat-servlet-api_9.0.102.wso2v1.jar is similar to removed component wso2/components/plugins/tomcat-servlet-api_9.0.98.wso2v1.jar
+[15-05-2025 15:06:55] DEBUG - Identified added component wso2/components/plugins/tomcat-el-api_9.0.102.wso2v1.jar is similar to removed component wso2/components/plugins/tomcat-el-api_9.0.98.wso2v1.jar
+[15-05-2025 15:06:55] DEBUG - Identified added component wso2/components/plugins/tomcat_9.0.102.wso2v1.jar is similar to removed component wso2/components/plugins/tomcat_9.0.98.wso2v1.jar
+[15-05-2025 15:06:55] DEBUG - Identified added component wso2/components/plugins/tomcat-jsp-api_9.0.102.wso2v1.jar is similar to removed component wso2/components/plugins/tomcat-jsp-api_9.0.98.wso2v1.jar
+[15-05-2025 15:06:55] DEBUG - Identified added component wso2/components/plugins/okio_3.9.0.wso2v2.jar is similar to removed component wso2/components/plugins/okio_3.9.0.wso2v1.jar
+[15-05-2025 15:06:55] DEBUG - Identified added component wso2/components/plugins/org.wso2.carbon.transports.sap_4.7.36.1.jar is similar to removed component wso2/components/plugins/org.wso2.carbon.transports.sap_4.7.36.jar
+[15-05-2025 15:06:55] DEBUG - Identified added component wso2/components/plugins/okhttp_4.12.0.wso2v2.jar is similar to removed component wso2/components/plugins/okhttp_4.12.0.wso2v1.jar
+[15-05-2025 15:06:55] DEBUG - Removing files from product
+[15-05-2025 15:06:55] DEBUG - Removing jar by abstract file name for /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/bin/tomcat-juli-9.0.94.jar
+[15-05-2025 15:06:55] DEBUG - Following files have been removed successfully:
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/bin/tomcat-juli-9.0.94.jar
+
+[15-05-2025 15:06:55] DEBUG - Adding new files to product
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/add/wso2/lib/failureaccess-1.0.2.jar
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/add/bin/tomcat-juli_9.0.102.jar
+[15-05-2025 15:06:55] DEBUG - Following files have been added successfully:
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/lib/failureaccess-1.0.2.jar
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/bin/tomcat-juli_9.0.102.jar
+
+[15-05-2025 15:06:55] DEBUG - Modifying files
+[15-05-2025 15:06:55] DEBUG - The following bundles.info files have been identified:
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/micro-integrator-default/configuration/org.eclipse.equinox.simpleconfigurator/bundles.info
+
+[15-05-2025 15:06:55] DEBUG - Replacing existing wso2/components/plugins/org.wso2.micro.integrator.mediation.ntask_4.4.0.jar with new wso2/components/plugins/org.wso2.micro.integrator.mediation.ntask_4.4.0.15.jar
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/org.wso2.micro.integrator.mediation.ntask_4.4.0.15.jar
+[15-05-2025 15:06:55] DEBUG - Expected SHA256 value of file did not match. Validating with SHA1 and MD5
+[15-05-2025 15:06:55] DEBUG - Updating jar file version of org.wso2.micro.integrator.mediation.ntask_4.4.0.jar from 4.4.0 to 4.4.0.15 in /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/micro-integrator-default/configuration/org.eclipse.equinox.simpleconfigurator/bundles.info
+[15-05-2025 15:06:55] DEBUG - Replacing bundles info entry: 
+[15-05-2025 15:06:55] DEBUG - Original bundles entry: org.wso2.micro.integrator.mediation.ntask,4.4.0,../plugins/org.wso2.micro.integrator.mediation.ntask_4.4.0.jar,4,true
+[15-05-2025 15:06:55] DEBUG - New bundles entry: org.wso2.micro.integrator.mediation.ntask,4.4.0.15,../plugins/org.wso2.micro.integrator.mediation.ntask_4.4.0.15.jar,4,true
+[15-05-2025 15:06:55] DEBUG - Modifying dbscripts/db2/db2_cluster.sql as diffApply
+[15-05-2025 15:06:55] DEBUG - File path in product: /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/dbscripts/db2/db2_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Original file path: /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/original/dbscripts/db2/db2_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/original/dbscripts/db2/db2_cluster.sql
+[15-05-2025 15:06:55] DEBUG - New file path: /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/dbscripts/db2/db2_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/dbscripts/db2/db2_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Applying diff-match-patch to file
+[15-05-2025 15:06:55] DEBUG - Product file '/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/dbscripts/db2/db2_cluster.sql' modified successfully
+[15-05-2025 15:06:55] DEBUG - Modifying dbscripts/oracle/oracle_cluster.sql as diffApply
+[15-05-2025 15:06:55] DEBUG - File path in product: /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/dbscripts/oracle/oracle_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Original file path: /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/original/dbscripts/oracle/oracle_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/original/dbscripts/oracle/oracle_cluster.sql
+[15-05-2025 15:06:55] DEBUG - New file path: /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/dbscripts/oracle/oracle_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/dbscripts/oracle/oracle_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Applying diff-match-patch to file
+[15-05-2025 15:06:55] DEBUG - Product file '/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/dbscripts/oracle/oracle_cluster.sql' modified successfully
+[15-05-2025 15:06:55] DEBUG - Modifying dbscripts/mysql/mysql_cluster.sql as diffApply
+[15-05-2025 15:06:55] DEBUG - File path in product: /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/dbscripts/mysql/mysql_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Original file path: /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/original/dbscripts/mysql/mysql_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/original/dbscripts/mysql/mysql_cluster.sql
+[15-05-2025 15:06:55] DEBUG - New file path: /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/dbscripts/mysql/mysql_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/dbscripts/mysql/mysql_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Applying diff-match-patch to file
+[15-05-2025 15:06:55] DEBUG - Product file '/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/dbscripts/mysql/mysql_cluster.sql' modified successfully
+[15-05-2025 15:06:55] DEBUG - Replacing existing wso2/components/plugins/commons-vfs2_2.2.0.wso2v20.jar with new wso2/components/plugins/commons-vfs2_2.2.0.wso2v20_2.jar
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/commons-vfs2_2.2.0.wso2v20_2.jar
+[15-05-2025 15:06:55] DEBUG - Expected SHA256 value of file did not match. Validating with SHA1 and MD5
+[15-05-2025 15:06:55] DEBUG - Updating jar file version of commons-vfs2_2.2.0.wso2v20.jar from 2.2.0.wso2v20 to 2.2.0.wso2v20_2 in /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/micro-integrator-default/configuration/org.eclipse.equinox.simpleconfigurator/bundles.info
+[15-05-2025 15:06:55] DEBUG - Replacing bundles info entry: 
+[15-05-2025 15:06:55] DEBUG - Original bundles entry: commons-vfs2,2.2.0.wso2v20,../plugins/commons-vfs2_2.2.0.wso2v20.jar,4,true
+[15-05-2025 15:06:55] DEBUG - New bundles entry: commons-vfs2,2.2.0.wso2v20_2,../plugins/commons-vfs2_2.2.0.wso2v20_2.jar,4,true
+[15-05-2025 15:06:55] DEBUG - Replacing existing wso2/components/plugins/org.wso2.micro.integrator.security_4.4.0.jar with new wso2/components/plugins/org.wso2.micro.integrator.security_4.4.0.11.jar
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/org.wso2.micro.integrator.security_4.4.0.11.jar
+[15-05-2025 15:06:55] DEBUG - Expected SHA256 value of file did not match. Validating with SHA1 and MD5
+[15-05-2025 15:06:55] DEBUG - Updating jar file version of org.wso2.micro.integrator.security_4.4.0.jar from 4.4.0 to 4.4.0.11 in /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/micro-integrator-default/configuration/org.eclipse.equinox.simpleconfigurator/bundles.info
+[15-05-2025 15:06:55] DEBUG - Replacing bundles info entry: 
+[15-05-2025 15:06:55] DEBUG - Original bundles entry: org.wso2.micro.integrator.security,4.4.0,../plugins/org.wso2.micro.integrator.security_4.4.0.jar,4,true
+[15-05-2025 15:06:55] DEBUG - New bundles entry: org.wso2.micro.integrator.security,4.4.0.11,../plugins/org.wso2.micro.integrator.security_4.4.0.11.jar,4,true
+[15-05-2025 15:06:55] DEBUG - Replacing existing wso2/components/plugins/synapse-core_4.0.0.wso2v215.jar with new wso2/components/plugins/synapse-core_4.0.0.wso2v215_7.jar
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/synapse-core_4.0.0.wso2v215_7.jar
+[15-05-2025 15:06:55] DEBUG - Expected SHA256 value of file did not match. Validating with SHA1 and MD5
+[15-05-2025 15:06:55] DEBUG - Updating jar file version of synapse-core_4.0.0.wso2v215.jar from 4.0.0.wso2v215 to 4.0.0.wso2v215_7 in /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/micro-integrator-default/configuration/org.eclipse.equinox.simpleconfigurator/bundles.info
+[15-05-2025 15:06:55] DEBUG - Replacing bundles info entry: 
+[15-05-2025 15:06:55] DEBUG - Original bundles entry: synapse-core,4.0.0.wso2v215,../plugins/synapse-core_4.0.0.wso2v215.jar,4,true
+[15-05-2025 15:06:55] DEBUG - New bundles entry: synapse-core,4.0.0.wso2v215_7,../plugins/synapse-core_4.0.0.wso2v215_7.jar,4,true
+[15-05-2025 15:06:55] DEBUG - Replacing existing wso2/components/plugins/org.wso2.micro.integrator.initializer_4.4.0.jar with new wso2/components/plugins/org.wso2.micro.integrator.initializer_4.4.0.10.jar
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/org.wso2.micro.integrator.initializer_4.4.0.10.jar
+[15-05-2025 15:06:55] DEBUG - Expected SHA256 value of file did not match. Validating with SHA1 and MD5
+[15-05-2025 15:06:55] DEBUG - Updating jar file version of org.wso2.micro.integrator.initializer_4.4.0.jar from 4.4.0 to 4.4.0.10 in /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/micro-integrator-default/configuration/org.eclipse.equinox.simpleconfigurator/bundles.info
+[15-05-2025 15:06:55] DEBUG - Replacing bundles info entry: 
+[15-05-2025 15:06:55] DEBUG - Original bundles entry: org.wso2.micro.integrator.initializer,4.4.0,../plugins/org.wso2.micro.integrator.initializer_4.4.0.jar,4,true
+[15-05-2025 15:06:55] DEBUG - New bundles entry: org.wso2.micro.integrator.initializer,4.4.0.10,../plugins/org.wso2.micro.integrator.initializer_4.4.0.10.jar,4,true
+[15-05-2025 15:06:55] DEBUG - Modifying dbscripts/mssql/mssql_cluster.sql as diffApply
+[15-05-2025 15:06:55] DEBUG - File path in product: /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/dbscripts/mssql/mssql_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Original file path: /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/original/dbscripts/mssql/mssql_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/original/dbscripts/mssql/mssql_cluster.sql
+[15-05-2025 15:06:55] DEBUG - New file path: /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/dbscripts/mssql/mssql_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/dbscripts/mssql/mssql_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Applying diff-match-patch to file
+[15-05-2025 15:06:55] DEBUG - Product file '/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/dbscripts/mssql/mssql_cluster.sql' modified successfully
+[15-05-2025 15:06:55] DEBUG - Modifying dbscripts/oracle-rac/oracle_rac_cluster.sql as diffApply
+[15-05-2025 15:06:55] DEBUG - File path in product: /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/dbscripts/oracle-rac/oracle_rac_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Original file path: /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/original/dbscripts/oracle-rac/oracle_rac_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/original/dbscripts/oracle-rac/oracle_rac_cluster.sql
+[15-05-2025 15:06:55] DEBUG - New file path: /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/dbscripts/oracle-rac/oracle_rac_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/dbscripts/oracle-rac/oracle_rac_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Applying diff-match-patch to file
+[15-05-2025 15:06:55] DEBUG - Product file '/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/dbscripts/oracle-rac/oracle_rac_cluster.sql' modified successfully
+[15-05-2025 15:06:55] DEBUG - Replacing existing wso2/components/plugins/org.wso2.micro.integrator.coordination_4.4.0.jar with new wso2/components/plugins/org.wso2.micro.integrator.coordination_4.4.0.15.jar
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/org.wso2.micro.integrator.coordination_4.4.0.15.jar
+[15-05-2025 15:06:55] DEBUG - Expected SHA256 value of file did not match. Validating with SHA1 and MD5
+[15-05-2025 15:06:55] DEBUG - Updating jar file version of org.wso2.micro.integrator.coordination_4.4.0.jar from 4.4.0 to 4.4.0.15 in /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/micro-integrator-default/configuration/org.eclipse.equinox.simpleconfigurator/bundles.info
+[15-05-2025 15:06:55] DEBUG - Replacing bundles info entry: 
+[15-05-2025 15:06:55] DEBUG - Original bundles entry: org.wso2.micro.integrator.coordination,4.4.0,../plugins/org.wso2.micro.integrator.coordination_4.4.0.jar,4,true
+[15-05-2025 15:06:55] DEBUG - New bundles entry: org.wso2.micro.integrator.coordination,4.4.0.15,../plugins/org.wso2.micro.integrator.coordination_4.4.0.15.jar,4,true
+[15-05-2025 15:06:55] DEBUG - Replacing existing wso2/components/plugins/org.wso2.micro.integrator.ndatasource.rdbms_4.4.0.jar with new wso2/components/plugins/org.wso2.micro.integrator.ndatasource.rdbms_4.4.0.8.jar
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/org.wso2.micro.integrator.ndatasource.rdbms_4.4.0.8.jar
+[15-05-2025 15:06:55] DEBUG - Expected SHA256 value of file did not match. Validating with SHA1 and MD5
+[15-05-2025 15:06:55] DEBUG - Updating jar file version of org.wso2.micro.integrator.ndatasource.rdbms_4.4.0.jar from 4.4.0 to 4.4.0.8 in /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/micro-integrator-default/configuration/org.eclipse.equinox.simpleconfigurator/bundles.info
+[15-05-2025 15:06:55] DEBUG - Replacing bundles info entry: 
+[15-05-2025 15:06:55] DEBUG - Original bundles entry: org.wso2.micro.integrator.ndatasource.rdbms,4.4.0,../plugins/org.wso2.micro.integrator.ndatasource.rdbms_4.4.0.jar,4,true
+[15-05-2025 15:06:55] DEBUG - New bundles entry: org.wso2.micro.integrator.ndatasource.rdbms,4.4.0.8,../plugins/org.wso2.micro.integrator.ndatasource.rdbms_4.4.0.8.jar,4,true
+[15-05-2025 15:06:55] DEBUG - Modifying dbscripts/postgres/postgresql_cluster.sql as diffApply
+[15-05-2025 15:06:55] DEBUG - File path in product: /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/dbscripts/postgres/postgresql_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Original file path: /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/original/dbscripts/postgres/postgresql_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/original/dbscripts/postgres/postgresql_cluster.sql
+[15-05-2025 15:06:55] DEBUG - New file path: /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/dbscripts/postgres/postgresql_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/dbscripts/postgres/postgresql_cluster.sql
+[15-05-2025 15:06:55] DEBUG - Applying diff-match-patch to file
+[15-05-2025 15:06:55] DEBUG - Product file '/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/dbscripts/postgres/postgresql_cluster.sql' modified successfully
+[15-05-2025 15:06:55] DEBUG - Replacing existing wso2/components/plugins/synapse-nhttp-transport_4.0.0.wso2v215.jar with new wso2/components/plugins/synapse-nhttp-transport_4.0.0.wso2v215_8.jar
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/synapse-nhttp-transport_4.0.0.wso2v215_8.jar
+[15-05-2025 15:06:55] DEBUG - Expected SHA256 value of file did not match. Validating with SHA1 and MD5
+[15-05-2025 15:06:55] DEBUG - Updating jar file version of synapse-nhttp-transport_4.0.0.wso2v215.jar from 4.0.0.wso2v215 to 4.0.0.wso2v215_8 in /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/micro-integrator-default/configuration/org.eclipse.equinox.simpleconfigurator/bundles.info
+[15-05-2025 15:06:55] DEBUG - Replacing bundles info entry: 
+[15-05-2025 15:06:55] DEBUG - Original bundles entry: synapse-nhttp-transport,4.0.0.wso2v215,../plugins/synapse-nhttp-transport_4.0.0.wso2v215.jar,4,true
+[15-05-2025 15:06:55] DEBUG - New bundles entry: synapse-nhttp-transport,4.0.0.wso2v215_8,../plugins/synapse-nhttp-transport_4.0.0.wso2v215_8.jar,4,true
+[15-05-2025 15:06:55] DEBUG - Replacing existing wso2/components/plugins/org.wso2.micro.integrator.dataservices.core_4.4.0.jar with new wso2/components/plugins/org.wso2.micro.integrator.dataservices.core_4.4.0.16.jar
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/org.wso2.micro.integrator.dataservices.core_4.4.0.16.jar
+[15-05-2025 15:06:55] DEBUG - Expected SHA256 value of file did not match. Validating with SHA1 and MD5
+[15-05-2025 15:06:55] DEBUG - Updating jar file version of org.wso2.micro.integrator.dataservices.core_4.4.0.jar from 4.4.0 to 4.4.0.16 in /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/micro-integrator-default/configuration/org.eclipse.equinox.simpleconfigurator/bundles.info
+[15-05-2025 15:06:55] DEBUG - Replacing bundles info entry: 
+[15-05-2025 15:06:55] DEBUG - Original bundles entry: org.wso2.micro.integrator.dataservices.core,4.4.0,../plugins/org.wso2.micro.integrator.dataservices.core_4.4.0.jar,4,true
+[15-05-2025 15:06:55] DEBUG - New bundles entry: org.wso2.micro.integrator.dataservices.core,4.4.0.16,../plugins/org.wso2.micro.integrator.dataservices.core_4.4.0.16.jar,4,true
+[15-05-2025 15:06:55] DEBUG - Replacing existing wso2/components/plugins/org.wso2.micro.integrator.ntask.core_4.4.0.jar with new wso2/components/plugins/org.wso2.micro.integrator.ntask.core_4.4.0.15.jar
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/org.wso2.micro.integrator.ntask.core_4.4.0.15.jar
+[15-05-2025 15:06:55] DEBUG - Expected SHA256 value of file did not match. Validating with SHA1 and MD5
+[15-05-2025 15:06:55] DEBUG - Updating jar file version of org.wso2.micro.integrator.ntask.core_4.4.0.jar from 4.4.0 to 4.4.0.15 in /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/micro-integrator-default/configuration/org.eclipse.equinox.simpleconfigurator/bundles.info
+[15-05-2025 15:06:55] DEBUG - Replacing bundles info entry: 
+[15-05-2025 15:06:55] DEBUG - Original bundles entry: org.wso2.micro.integrator.ntask.core,4.4.0,../plugins/org.wso2.micro.integrator.ntask.core_4.4.0.jar,4,true
+[15-05-2025 15:06:55] DEBUG - New bundles entry: org.wso2.micro.integrator.ntask.core,4.4.0.15,../plugins/org.wso2.micro.integrator.ntask.core_4.4.0.15.jar,4,true
+[15-05-2025 15:06:55] DEBUG - Replacing existing wso2/components/plugins/org.wso2.micro.integrator.inbound.endpoint_4.4.0.jar with new wso2/components/plugins/org.wso2.micro.integrator.inbound.endpoint_4.4.0.11.jar
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/org.wso2.micro.integrator.inbound.endpoint_4.4.0.11.jar
+[15-05-2025 15:06:55] DEBUG - Expected SHA256 value of file did not match. Validating with SHA1 and MD5
+[15-05-2025 15:06:55] DEBUG - Updating jar file version of org.wso2.micro.integrator.inbound.endpoint_4.4.0.jar from 4.4.0 to 4.4.0.11 in /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/micro-integrator-default/configuration/org.eclipse.equinox.simpleconfigurator/bundles.info
+[15-05-2025 15:06:55] DEBUG - Replacing bundles info entry: 
+[15-05-2025 15:06:55] DEBUG - Original bundles entry: org.wso2.micro.integrator.inbound.endpoint,4.4.0,../plugins/org.wso2.micro.integrator.inbound.endpoint_4.4.0.jar,4,true
+[15-05-2025 15:06:55] DEBUG - New bundles entry: org.wso2.micro.integrator.inbound.endpoint,4.4.0.11,../plugins/org.wso2.micro.integrator.inbound.endpoint_4.4.0.11.jar,4,true
+[15-05-2025 15:06:55] DEBUG - Replacing existing wso2/components/plugins/org.wso2.micro.integrator.transport.handlers_4.4.0.jar with new wso2/components/plugins/org.wso2.micro.integrator.transport.handlers_4.4.0.10.jar
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/org.wso2.micro.integrator.transport.handlers_4.4.0.10.jar
+[15-05-2025 15:06:55] DEBUG - Expected SHA256 value of file did not match. Validating with SHA1 and MD5
+[15-05-2025 15:06:55] DEBUG - Updating jar file version of org.wso2.micro.integrator.transport.handlers_4.4.0.jar from 4.4.0 to 4.4.0.10 in /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/micro-integrator-default/configuration/org.eclipse.equinox.simpleconfigurator/bundles.info
+[15-05-2025 15:06:55] DEBUG - Replacing bundles info entry: 
+[15-05-2025 15:06:55] DEBUG - Original bundles entry: org.wso2.micro.integrator.transport.handlers,4.4.0,../plugins/org.wso2.micro.integrator.transport.handlers_4.4.0.jar,4,true
+[15-05-2025 15:06:55] DEBUG - New bundles entry: org.wso2.micro.integrator.transport.handlers,4.4.0.10,../plugins/org.wso2.micro.integrator.transport.handlers_4.4.0.10.jar,4,true
+[15-05-2025 15:06:55] DEBUG - Replacing existing wso2/lib/org.wso2.ciphertool-1.2.5.jar with new wso2/lib/org.wso2.ciphertool-1.2.5.1.jar
+[15-05-2025 15:06:55] DEBUG - Removing dropins bundle of /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/lib/org.wso2.ciphertool-1.2.5.jar
+[15-05-2025 15:06:55] DEBUG - Removing all versions of jar file at /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/lib/org.wso2.ciphertool-1.2.5.jar
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/lib/org.wso2.ciphertool-1.2.5.1.jar
+[15-05-2025 15:06:55] DEBUG - Expected SHA256 value of file did not match. Validating with SHA1 and MD5
+[15-05-2025 15:06:55] DEBUG - Replacing existing wso2/components/plugins/org.wso2.carbon.mediator.smooks_4.7.244.jar with new wso2/components/plugins/org.wso2.carbon.mediator.smooks_4.7.244.2.jar
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/org.wso2.carbon.mediator.smooks_4.7.244.2.jar
+[15-05-2025 15:06:55] DEBUG - Expected SHA256 value of file did not match. Validating with SHA1 and MD5
+[15-05-2025 15:06:55] DEBUG - Updating jar file version of org.wso2.carbon.mediator.smooks_4.7.244.jar from 4.7.244 to 4.7.244.2 in /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/micro-integrator-default/configuration/org.eclipse.equinox.simpleconfigurator/bundles.info
+[15-05-2025 15:06:55] DEBUG - Replacing bundles info entry: 
+[15-05-2025 15:06:55] DEBUG - Original bundles entry: org.wso2.carbon.mediator.smooks,4.7.244,../plugins/org.wso2.carbon.mediator.smooks_4.7.244.jar,4,true
+[15-05-2025 15:06:55] DEBUG - New bundles entry: org.wso2.carbon.mediator.smooks,4.7.244.2,../plugins/org.wso2.carbon.mediator.smooks_4.7.244.2.jar,4,true
+[15-05-2025 15:06:55] DEBUG - Replacing existing wso2/components/plugins/org.wso2.micro.integrator.core_4.4.0.jar with new wso2/components/plugins/org.wso2.micro.integrator.core_4.4.0.10.jar
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/org.wso2.micro.integrator.core_4.4.0.10.jar
+[15-05-2025 15:06:55] DEBUG - Expected SHA256 value of file did not match. Validating with SHA1 and MD5
+[15-05-2025 15:06:55] DEBUG - Updating jar file version of org.wso2.micro.integrator.core_4.4.0.jar from 4.4.0 to 4.4.0.10 in /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/micro-integrator-default/configuration/org.eclipse.equinox.simpleconfigurator/bundles.info
+[15-05-2025 15:06:55] DEBUG - Replacing bundles info entry: 
+[15-05-2025 15:06:55] DEBUG - Original bundles entry: org.wso2.micro.integrator.core,4.4.0,../plugins/org.wso2.micro.integrator.core_4.4.0.jar,4,true
+[15-05-2025 15:06:55] DEBUG - New bundles entry: org.wso2.micro.integrator.core,4.4.0.10,../plugins/org.wso2.micro.integrator.core_4.4.0.10.jar,4,true
+[15-05-2025 15:06:55] DEBUG - Replacing existing wso2/components/plugins/tomcat-servlet-api_9.0.98.wso2v1.jar with new wso2/components/plugins/tomcat-servlet-api_9.0.102.wso2v1.jar
+[15-05-2025 15:06:55] DEBUG - Modified file /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/tomcat-servlet-api_9.0.102.wso2v1.jar does not exist in modified directory. Checking added files.
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/add/wso2/components/plugins/tomcat-servlet-api_9.0.102.wso2v1.jar
+[15-05-2025 15:06:55] DEBUG - Updating jar file version of tomcat-servlet-api_9.0.98.wso2v1.jar from 9.0.98.wso2v1 to 9.0.102.wso2v1 in /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/micro-integrator-default/configuration/org.eclipse.equinox.simpleconfigurator/bundles.info
+[15-05-2025 15:06:55] DEBUG - Replacing bundles info entry: 
+[15-05-2025 15:06:55] DEBUG - Original bundles entry: tomcat-servlet-api,9.0.98.wso2v1,../plugins/tomcat-servlet-api_9.0.98.wso2v1.jar,4,true
+[15-05-2025 15:06:55] DEBUG - New bundles entry: tomcat-servlet-api,9.0.102.wso2v1,../plugins/tomcat-servlet-api_9.0.102.wso2v1.jar,4,true
+[15-05-2025 15:06:55] DEBUG - Replacing existing wso2/components/plugins/tomcat-el-api_9.0.98.wso2v1.jar with new wso2/components/plugins/tomcat-el-api_9.0.102.wso2v1.jar
+[15-05-2025 15:06:55] DEBUG - Modified file /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/tomcat-el-api_9.0.102.wso2v1.jar does not exist in modified directory. Checking added files.
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/add/wso2/components/plugins/tomcat-el-api_9.0.102.wso2v1.jar
+[15-05-2025 15:06:55] DEBUG - Updating jar file version of tomcat-el-api_9.0.98.wso2v1.jar from 9.0.98.wso2v1 to 9.0.102.wso2v1 in /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/micro-integrator-default/configuration/org.eclipse.equinox.simpleconfigurator/bundles.info
+[15-05-2025 15:06:55] DEBUG - Replacing bundles info entry: 
+[15-05-2025 15:06:55] DEBUG - Original bundles entry: tomcat-el-api,9.0.98.wso2v1,../plugins/tomcat-el-api_9.0.98.wso2v1.jar,4,true
+[15-05-2025 15:06:55] DEBUG - New bundles entry: tomcat-el-api,9.0.102.wso2v1,../plugins/tomcat-el-api_9.0.102.wso2v1.jar,4,true
+[15-05-2025 15:06:55] DEBUG - Replacing existing wso2/components/plugins/tomcat_9.0.98.wso2v1.jar with new wso2/components/plugins/tomcat_9.0.102.wso2v1.jar
+[15-05-2025 15:06:55] DEBUG - Modified file /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/tomcat_9.0.102.wso2v1.jar does not exist in modified directory. Checking added files.
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/add/wso2/components/plugins/tomcat_9.0.102.wso2v1.jar
+[15-05-2025 15:06:55] DEBUG - Updating jar file version of tomcat_9.0.98.wso2v1.jar from 9.0.98.wso2v1 to 9.0.102.wso2v1 in /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/micro-integrator-default/configuration/org.eclipse.equinox.simpleconfigurator/bundles.info
+[15-05-2025 15:06:55] DEBUG - Replacing bundles info entry: 
+[15-05-2025 15:06:55] DEBUG - Original bundles entry: tomcat,9.0.98.wso2v1,../plugins/tomcat_9.0.98.wso2v1.jar,4,true
+[15-05-2025 15:06:55] DEBUG - New bundles entry: tomcat,9.0.102.wso2v1,../plugins/tomcat_9.0.102.wso2v1.jar,4,true
+[15-05-2025 15:06:55] DEBUG - Replacing existing wso2/components/plugins/tomcat-jsp-api_9.0.98.wso2v1.jar with new wso2/components/plugins/tomcat-jsp-api_9.0.102.wso2v1.jar
+[15-05-2025 15:06:55] DEBUG - Modified file /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/tomcat-jsp-api_9.0.102.wso2v1.jar does not exist in modified directory. Checking added files.
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/add/wso2/components/plugins/tomcat-jsp-api_9.0.102.wso2v1.jar
+[15-05-2025 15:06:55] DEBUG - Updating jar file version of tomcat-jsp-api_9.0.98.wso2v1.jar from 9.0.98.wso2v1 to 9.0.102.wso2v1 in /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/micro-integrator-default/configuration/org.eclipse.equinox.simpleconfigurator/bundles.info
+[15-05-2025 15:06:55] DEBUG - Replacing bundles info entry: 
+[15-05-2025 15:06:55] DEBUG - Original bundles entry: tomcat-jsp-api,9.0.98.wso2v1,../plugins/tomcat-jsp-api_9.0.98.wso2v1.jar,4,true
+[15-05-2025 15:06:55] DEBUG - New bundles entry: tomcat-jsp-api,9.0.102.wso2v1,../plugins/tomcat-jsp-api_9.0.102.wso2v1.jar,4,true
+[15-05-2025 15:06:55] DEBUG - Replacing existing wso2/components/plugins/okio_3.9.0.wso2v1.jar with new wso2/components/plugins/okio_3.9.0.wso2v2.jar
+[15-05-2025 15:06:55] DEBUG - Modified file /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/okio_3.9.0.wso2v2.jar does not exist in modified directory. Checking added files.
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/add/wso2/components/plugins/okio_3.9.0.wso2v2.jar
+[15-05-2025 15:06:55] DEBUG - Updating jar file version of okio_3.9.0.wso2v1.jar from 3.9.0.wso2v1 to 3.9.0.wso2v2 in /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/micro-integrator-default/configuration/org.eclipse.equinox.simpleconfigurator/bundles.info
+[15-05-2025 15:06:55] DEBUG - Replacing bundles info entry: 
+[15-05-2025 15:06:55] DEBUG - Original bundles entry: okio,3.9.0.wso2v1,../plugins/okio_3.9.0.wso2v1.jar,4,true
+[15-05-2025 15:06:55] DEBUG - New bundles entry: okio,3.9.0.wso2v2,../plugins/okio_3.9.0.wso2v2.jar,4,true
+[15-05-2025 15:06:55] DEBUG - Replacing existing wso2/components/plugins/org.wso2.carbon.transports.sap_4.7.36.jar with new wso2/components/plugins/org.wso2.carbon.transports.sap_4.7.36.1.jar
+[15-05-2025 15:06:55] DEBUG - Modified file /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/org.wso2.carbon.transports.sap_4.7.36.1.jar does not exist in modified directory. Checking added files.
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/add/wso2/components/plugins/org.wso2.carbon.transports.sap_4.7.36.1.jar
+[15-05-2025 15:06:55] DEBUG - Updating jar file version of org.wso2.carbon.transports.sap_4.7.36.jar from 4.7.36 to 4.7.36.1 in /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/micro-integrator-default/configuration/org.eclipse.equinox.simpleconfigurator/bundles.info
+[15-05-2025 15:06:55] DEBUG - Replacing bundles info entry: 
+[15-05-2025 15:06:55] DEBUG - Original bundles entry: org.wso2.carbon.transports.sap,4.7.36,../plugins/org.wso2.carbon.transports.sap_4.7.36.jar,4,true
+[15-05-2025 15:06:55] DEBUG - New bundles entry: org.wso2.carbon.transports.sap,4.7.36.1,../plugins/org.wso2.carbon.transports.sap_4.7.36.1.jar,4,true
+[15-05-2025 15:06:55] DEBUG - Replacing existing wso2/components/plugins/okhttp_4.12.0.wso2v1.jar with new wso2/components/plugins/okhttp_4.12.0.wso2v2.jar
+[15-05-2025 15:06:55] DEBUG - Modified file /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/modify/new/wso2/components/plugins/okhttp_4.12.0.wso2v2.jar does not exist in modified directory. Checking added files.
+[15-05-2025 15:06:55] DEBUG - Validating updated file with SHA256 at /root/.wso2-updates/updates/wso2mi-4.4.0.0-4.4.0.9/add/wso2/components/plugins/okhttp_4.12.0.wso2v2.jar
+[15-05-2025 15:06:55] DEBUG - Updating jar file version of okhttp_4.12.0.wso2v1.jar from 4.12.0.wso2v1 to 4.12.0.wso2v2 in /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/micro-integrator-default/configuration/org.eclipse.equinox.simpleconfigurator/bundles.info
+[15-05-2025 15:06:55] DEBUG - Replacing bundles info entry: 
+[15-05-2025 15:06:55] DEBUG - Original bundles entry: okhttp,4.12.0.wso2v1,../plugins/okhttp_4.12.0.wso2v1.jar,4,true
+[15-05-2025 15:06:55] DEBUG - New bundles entry: okhttp,4.12.0.wso2v2,../plugins/okhttp_4.12.0.wso2v2.jar,4,true
+[15-05-2025 15:06:55] DEBUG - Following files have been modified successfully:
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/plugins/org.wso2.micro.integrator.mediation.ntask_4.4.0.15.jar
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/dbscripts/db2/db2_cluster.sql
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/dbscripts/oracle/oracle_cluster.sql
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/dbscripts/mysql/mysql_cluster.sql
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/plugins/commons-vfs2_2.2.0.wso2v20_2.jar
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/plugins/org.wso2.micro.integrator.security_4.4.0.11.jar
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/plugins/synapse-core_4.0.0.wso2v215_7.jar
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/plugins/org.wso2.micro.integrator.initializer_4.4.0.10.jar
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/dbscripts/mssql/mssql_cluster.sql
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/dbscripts/oracle-rac/oracle_rac_cluster.sql
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/plugins/org.wso2.micro.integrator.coordination_4.4.0.15.jar
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/plugins/org.wso2.micro.integrator.ndatasource.rdbms_4.4.0.8.jar
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/dbscripts/postgres/postgresql_cluster.sql
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/plugins/synapse-nhttp-transport_4.0.0.wso2v215_8.jar
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/plugins/org.wso2.micro.integrator.dataservices.core_4.4.0.16.jar
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/plugins/org.wso2.micro.integrator.ntask.core_4.4.0.15.jar
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/plugins/org.wso2.micro.integrator.inbound.endpoint_4.4.0.11.jar
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/plugins/org.wso2.micro.integrator.transport.handlers_4.4.0.10.jar
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/lib/org.wso2.ciphertool-1.2.5.1.jar
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/plugins/org.wso2.carbon.mediator.smooks_4.7.244.2.jar
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/plugins/org.wso2.micro.integrator.core_4.4.0.10.jar
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/plugins/tomcat-servlet-api_9.0.102.wso2v1.jar
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/plugins/tomcat-el-api_9.0.102.wso2v1.jar
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/plugins/tomcat_9.0.102.wso2v1.jar
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/plugins/tomcat-jsp-api_9.0.102.wso2v1.jar
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/plugins/okio_3.9.0.wso2v2.jar
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/plugins/org.wso2.carbon.transports.sap_4.7.36.1.jar
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/wso2/components/plugins/okhttp_4.12.0.wso2v2.jar
+
+[15-05-2025 15:06:55] DEBUG - Following files have been merged successfully:
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/dbscripts/db2/db2_cluster.sql
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/dbscripts/oracle/oracle_cluster.sql
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/dbscripts/mysql/mysql_cluster.sql
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/dbscripts/mssql/mssql_cluster.sql
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/dbscripts/oracle-rac/oracle_rac_cluster.sql
+/home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/dbscripts/postgres/postgresql_cluster.sql
+
+[15-05-2025 15:06:55] DEBUG - Modifying bundles.info entries
+[15-05-2025 15:06:55] INFO - wso2mi-4.4.0 updated successfully
+[15-05-2025 15:06:55] DEBUG - Updates configurations written to /home/jenkins/workspace/update-2/updated-product-pack/wso2mi-4.4.0/wso2mi/wso2mi-4.4.0/updates/config.json

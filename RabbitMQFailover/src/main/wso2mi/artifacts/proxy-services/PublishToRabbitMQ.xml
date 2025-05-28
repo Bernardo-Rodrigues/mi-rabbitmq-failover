@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="PublishToRabbitMQ" startOnLoad="true" transports="http https" xmlns="http://ws.apache.org/ns/synapse">
+    <target>
+    <inSequence>
+      <property name="OUT_ONLY" value="true"/>
+      <property name="FORCE_SC_ACCEPTED" value="true" scope="axis2"/>
+
+      <log level="full">
+        <property name="Message" expression="json-eval($)"/>
+      </log>
+
+      <send>
+        <endpoint>
+          <address uri="rabbitmq:/mi.messages?rabbitmq.server.host.name=localhost&amp;rabbitmq.server.port=5679&amp;rabbitmq.server.user.name=wso2mi&amp;rabbitmq.server.password=wso2pass&amp;routing.key=mi.messages"/>
+        </endpoint>
+      </send>
+    </inSequence>
+  </target>
+</proxy>
