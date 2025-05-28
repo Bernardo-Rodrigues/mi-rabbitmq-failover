@@ -317,14 +317,6 @@
     <transportSender name="vfs" class="org.apache.synapse.transport.vfs.VFSTransportSender">
     </transportSender>
     <!-- SAP Transport Senders -->
-    <transportSender name="rabbitmq" class="org.apache.axis2.transport.rabbitmq.RabbitMQSender">
-        <parameter name="RabbitMQ_Failover_Factory" locked="false">
-            <parameter name="rabbitmq.server.host.name" locked="false">localhost</parameter>
-            <parameter name="rabbitmq.server.port" locked="false">5679</parameter>
-            <parameter name="rabbitmq.server.user.name" locked="false">wso2mi</parameter>
-            <parameter name="rabbitmq.server.password" locked="false">wso2pass</parameter>
-        </parameter>
-    </transportSender>
     <!-- ================================================= -->
     <!--             Global Engaged Modules                -->
     <!-- ================================================= -->

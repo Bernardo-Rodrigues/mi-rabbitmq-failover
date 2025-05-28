@@ -1,6 +1,3 @@
-[2025-05-28 20:08:09,977]  INFO {SERVICE_LOGGER.PublishToRabbitMQ} - Building Axis service for Proxy service : PublishToRabbitMQ
-[2025-05-28 20:08:09,978]  INFO {SERVICE_LOGGER.PublishToRabbitMQ} - Adding service PublishToRabbitMQ to the Axis2 configuration
-[2025-05-28 20:08:09,981]  INFO {SERVICE_LOGGER.PublishToRabbitMQ} - Successfully created the Axis2 service for Proxy service : PublishToRabbitMQ
-[2025-05-28 20:08:50,146]  INFO {SERVICE_LOGGER.PublishToRabbitMQ} - Building Axis service for Proxy service : PublishToRabbitMQ
-[2025-05-28 20:08:50,148]  INFO {SERVICE_LOGGER.PublishToRabbitMQ} - Adding service PublishToRabbitMQ to the Axis2 configuration
-[2025-05-28 20:08:50,150]  INFO {SERVICE_LOGGER.PublishToRabbitMQ} - Successfully created the Axis2 service for Proxy service : PublishToRabbitMQ
+[2025-05-28 20:07:02,981]  INFO {SERVICE_LOGGER.PublishToRabbitMQ} - Building Axis service for Proxy service : PublishToRabbitMQ
+[2025-05-28 20:07:02,983]  INFO {SERVICE_LOGGER.PublishToRabbitMQ} - Adding service PublishToRabbitMQ to the Axis2 configuration
+[2025-05-28 20:07:02,985]  INFO {SERVICE_LOGGER.PublishToRabbitMQ} - Successfully created the Axis2 service for Proxy service : PublishToRabbitMQ

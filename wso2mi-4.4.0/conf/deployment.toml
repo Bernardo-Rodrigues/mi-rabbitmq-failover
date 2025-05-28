@@ -18,13 +18,6 @@ password = "wso2carbon"
 alias = "symmetric.key.value"
 algorithm = "AES"
 
-[[transport.rabbitmq.sender]]
-name = "RabbitMQ_Failover_Factory"
-parameter.hostname = "localhost"
-parameter.port = 5679
-parameter.username = "wso2mi"
-parameter.password = "wso2pass"
-
 ## Following are set of example configs. Please refer docs for complete set of configurations.
 
 # [transport.http]

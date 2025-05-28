@@ -1,29 +1,3 @@
-#
-# Copyright (c) 2024, WSO2 LLC. (http://www.wso2.org) All Rights Reserved.
-#
-# WSO2 LLC. licenses this file to you under the Apache License,
-# Version 2.0 (the "License"); you may not use this file except
-# in compliance with the License.
-# You may obtain a copy of the License at
-#
-#    http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing,
-# software distributed under the License is distributed on an
-# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-# KIND, either express or implied. See the License for the
-# specific language governing permissions and limitations
-# under the License.
-#
-#
-##############################################
-#
-# WARNING: Don't edit the file manually unless you are not using the deployment.toml file.
-#
-##############################################
-
-## This file contains the configuration parameters used by the Diagnostic tool
-
 # Server Configurations
 [server_configuration]
 diagnostic_tool_enabled = "true"
@@ -33,8 +7,9 @@ updates_config_path = "../updates/config.json"
 diagnostic_log_file_path = "logs/diagnostics.log"
 carbon_log_file_path = "../repository/logs/wso2error.log"
 process_id_path = "../wso2carbon.pid"
-server_name = "WSO2 Micro Integrator"
-server_version = "4.4.0"
+#server_name = "WSO2 Server"
+#server_version = "1.0.0"
+
 
 ## Action Executor Configurations
 
@@ -65,10 +40,6 @@ executor = "ServerInfo"
 [[action_executor_configuration]]
 executor = "MetricsSnapshot"
 
-[[action_executor_configuration]]
-executor = "org.wso2.carbon.diagnostics.action.executor.MetricsSnapshot"
-
-
 # Watcher Configurations
 [cpu_watcher]
 enabled = "true"
@@ -86,10 +57,11 @@ action_executors = "ThreadDumper,MetricsSnapshot,ServerInfo"
 
 [log_watcher]
 enabled = "true"
-interval = 0.1
+interval = "0.1"
 
+# Custom Watcher Configurations
 [[custom_watchers]]
-class = "org.wso2.carbon.diagnostics.trafficanalyzer.TrafficAnalyzer"
+class = "org.wso2.diagnostics.watchers.trafficanalyzer.TrafficAnalyzer"
 
 # Traffic Analyzer Configurations
 [traffic_analyzer]
@@ -107,13 +79,20 @@ last_minutes_requests_delay = "1"
 last_minutes_requests_interval = "60"
 notify_interval = "60"
 
-
 # Output data zip configurations
+
 [zip_file_configuration]
 output_directory = "data"
 max_count = "20"
 
 # Error regex patterns and diagnosis
+
+# Example
+#[[log_pattern]]
+#regex = "(.*)Timeout(.*)"
+#executors = "MetricsSnapshot,Netstat,OpenFileFinder,ServerInfo"
+#reload_time = "30"
+
 [[log_pattern]]
 regex = "(.*)org.apache.synapse.transport.passthru(.*)"
 executors = "MetricsSnapshot,Netstat,OpenFileFinder,ThreadDumper,ServerInfo"
@@ -124,5 +103,22 @@ regex = "(.*)org.apache.synapse(.*)"
 executors = "ServerInfo"
 reload_time = "10"
 
+## FTP Uploader configurations
+#[ftp_uploader]
+#enabled = "true"
+#host = "ftp.example.com"
+#port = "21"
+#username = "username"
+#password = "password"
+#directory = "diagnostics"
 
-
+## SFTP Uploader configurations
+#[sftp_uploader]
+#enabled = "true"
+#host = "sftp.example.com"
+#port = "22"
+#username = "username"
+#password = "password"
+#directory = "diagnostics"
+#known_hosts_path = "/home/user/.ssh/known_hosts"
+#strict_host_key_checking = "yes" # or "no"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!--
- Copyright (c) 2019, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+ Copyright (c) 2018, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@
     ${carbon.home} represents the carbon.home system property.
     Other system properties can be specified in a similar manner.
 -->
-<Server xmlns="http://wso2.org/projects/carbon/carbon.xml" xmlns:svns="http://org.wso2.securevault/configuration">
+<Server xmlns="http://wso2.org/projects/carbon/carbon.xml">
 
     <!--
        Product Name
@@ -44,12 +44,12 @@
        This is will become part of the End Point Reference of the
        services deployed on this server instance.
     -->
-    <HostName>localhost</HostName>
+    <!--HostName>www.wso2.org</HostName-->
 
     <!--
     Host name to be used for the Carbon management console
     -->
-    <MgtHostName>localhost</MgtHostName>
+    <!--MgtHostName>mgt.wso2.org</MgtHostName-->
 
     <!--
         The URL of the back end server. This is where the admin services are hosted and
@@ -60,10 +60,10 @@
     <!--
     <ServerURL>https://${carbon.local.ip}:${carbon.management.port}${carbon.context}/services/</ServerURL>
     -->
-    <!--
-    The URL of the index page. This is where the user will be redirected after signing in to the
-    carbon server.
-    -->
+     <!--
+     The URL of the index page. This is where the user will be redirected after signing in to the
+     carbon server.
+     -->
     <!-- IndexPageURL>/carbon/admin/index.jsp</IndexPageURL-->
 
     <!--
@@ -90,6 +90,7 @@
        Webapp context root of WSO2 Carbon management console.
     -->
     <WebContextRoot>/</WebContextRoot>
+
     <!--
     	Proxy context path is a useful parameter to add a proxy path when a Carbon server is fronted by reverse proxy. In addtion
         to the proxy host and proxy port this parameter allows you add a path component to external URLs. e.g.
@@ -99,8 +100,10 @@
    	appserver - proxy context path. This specially required whenever you are generating URLs to displace in
    	Carbon UI components.
     -->
-    <MgtProxyContextPath></MgtProxyContextPath>
-    <ProxyContextPath></ProxyContextPath>
+    <!--
+    	<MgtProxyContextPath></MgtProxyContextPath>
+    	<ProxyContextPath></ProxyContextPath>
+    -->
 
     <!-- In-order to  get the registry http Port from the back-end when the default http transport is not the same-->
     <!--RegistryHttpPort>9763</RegistryHttpPort-->
@@ -140,21 +143,21 @@
             <!-- Port which KDC (Kerberos Key Distribution Center) server runs -->
             <KDCServerPort>8000</KDCServerPort>
         </EmbeddedLDAP>
+	
+	<!-- 
+             Override datasources JNDIproviderPort defined in bps.xml and datasources.properties files
+	-->
+	<!--<JNDIProviderPort>2199</JNDIProviderPort>-->
+	<!--Override receive port of thrift based entitlement service.-->
+	<ThriftEntitlementReceivePort>10500</ThriftEntitlementReceivePort>
 
-        <!--
-                 Override datasources JNDIproviderPort defined in bps.xml and datasources.properties files
-        -->
-        <!--<JNDIProviderPort>2199</JNDIProviderPort>-->
-        <!--Override receive port of thrift based entitlement service.-->
-        <ThriftEntitlementReceivePort>10500</ThriftEntitlementReceivePort>
-
-        <!--
-         This is the proxy port of the worker cluster. These need to be configured in a scenario where
-         manager node is not exposed through the load balancer through which the workers are exposed
-         therefore doesn't have a proxy port.
-        <WorkerHttpProxyPort>80</WorkerHttpProxyPort>
-        <WorkerHttpsProxyPort>443</WorkerHttpsProxyPort>
-        -->
+    <!--
+     This is the proxy port of the worker cluster. These need to be configured in a scenario where
+     manager node is not exposed through the load balancer through which the workers are exposed
+     therefore doesn't have a proxy port.
+    <WorkerHttpProxyPort>80</WorkerHttpProxyPort>
+    <WorkerHttpsProxyPort>443</WorkerHttpsProxyPort>
+    -->
 
     </Ports>
 
@@ -162,12 +165,12 @@
         JNDI Configuration
     -->
     <JNDI>
-        <!--
+        <!-- 
              The fully qualified name of the default initial context factory
         -->
         <DefaultInitialContextFactory>org.wso2.micro.tomcat.jndi.CarbonJavaURLContextFactory</DefaultInitialContextFactory>
-        <!--
-             The restrictions that are done to various JNDI Contexts in a Multi-tenant environment
+        <!-- 
+             The restrictions that are done to various JNDI Contexts in a Multi-tenant environment 
         -->
         <Restrictions>
             <!--
@@ -183,7 +186,7 @@
                     </UrlContext>
                 </UrlContexts>
             </SuperTenantOnly> -->
-            <!--
+            <!-- 
                 Contexts that are common to all tenants
             -->
             <AllTenants>
@@ -196,8 +199,8 @@
                     </UrlContext> -->
                 </UrlContexts>
             </AllTenants>
-            <!--
-                 All other contexts not mentioned above will be available on a per-tenant basis
+            <!-- 
+                 All other contexts not mentioned above will be available on a per-tenant basis 
                  (i.e. will not be shared among tenants)
             -->
         </Restrictions>
@@ -245,7 +248,7 @@
 
         <!--
          Deployment update interval in seconds. This is the interval between repository listener
-         executions.
+         executions. 
         -->
         <DeploymentUpdateInterval>15</DeploymentUpdateInterval>
 
@@ -279,10 +282,10 @@
         <clientAxis2XmlLocation>${carbon.home}/conf/axis2/axis2_client.xml</clientAxis2XmlLocation>
         <!-- If this parameter is set, the ?wsdl on an admin service will not give the admin service wsdl. -->
         <HideAdminServiceWSDLs>true</HideAdminServiceWSDLs>
-
-        <!--WARNING-Use With Care! Uncommenting bellow parameter would expose all AdminServices in HTTP transport.
-        With HTTP transport your credentials and data routed in public channels are vulnerable for sniffing attacks.
-        Use bellow parameter ONLY if your communication channels are confirmed to be secured by other means -->
+	
+	<!--WARNING-Use With Care! Uncommenting bellow parameter would expose all AdminServices in HTTP transport.
+	With HTTP transport your credentials and data routed in public channels are vulnerable for sniffing attacks. 
+	Use bellow parameter ONLY if your communication channels are confirmed to be secured by other means -->
         <!--HttpAdminServices>*</HttpAdminServices-->
 
     </Axis2Config>
@@ -301,11 +304,11 @@
             <Description>Default User Role</Description>
         </Role>
     </ServiceUserRoles>
-
-    <!--
-      Enable following config to allow Emails as usernames.
-    -->
-    <EnableEmailUserName>false</EnableEmailUserName>
+    
+    <!-- 
+      Enable following config to allow Emails as usernames. 	
+    -->	    	
+    <!--EnableEmailUserName>true</EnableEmailUserName-->
 
     <!--
        Configurations related to Carbon Crypto Service which is a crypto framework used inside Carbon products.
@@ -336,8 +339,8 @@
     </CryptoService>
 
     <!--
-          Security configurations
-        -->
+      Security configurations
+    -->
     <Security>
         <!--
             KeyStore which will be used for encrypting/decrypting passwords
@@ -345,7 +348,7 @@
         -->
         <KeyStore>
             <!-- Keystore file location-->
-            <Location>repository/resources/security/wso2carbon.jks</Location>
+            <Location>${carbon.home}/repository/resources/security/wso2carbon.jks</Location>
             <!-- Keystore type (JKS/PKCS12 etc.)-->
             <Type>JKS</Type>
             <!-- Keystore password-->
@@ -362,7 +365,7 @@
         -->
         <InternalKeyStore>
             <!-- Keystore file location-->
-            <Location>repository/resources/security/wso2carbon.jks</Location>
+            <Location>${carbon.home}/repository/resources/security/wso2carbon.jks</Location>
             <!-- Keystore type (JKS/PKCS12 etc.)-->
             <Type>JKS</Type>
             <!-- Keystore password-->
@@ -379,7 +382,7 @@
         -->
         <TrustStore>
             <!-- trust-store file location -->
-            <Location>repository/resources/security/client-truststore.jks</Location>
+            <Location>${carbon.home}/repository/resources/security/client-truststore.jks</Location>
             <!-- trust-store type (JKS/PKCS12 etc.) -->
             <Type>JKS</Type>
             <!-- trust-store password -->
@@ -388,31 +391,31 @@
 
         <!--
             The Authenticator configuration to be used at the JVM level. We extend the
-            java.net.Authenticator to make it possible to authenticate to given servers and
+            java.net.Authenticator to make it possible to authenticate to given servers and 
             proxies.
         -->
         <NetworkAuthenticatorConfig>
-            <!--
+            <!-- 
                 Below is a sample configuration for a single authenticator. Please note that
                 all child elements are mandatory. Not having some child elements would lead to
                 exceptions at runtime.
             -->
             <!-- <Credential> -->
-            <!--
-                the pattern that would match a subset of URLs for which this authenticator
-                would be used
-            -->
-            <!-- <Pattern>regularExpression</Pattern> -->
-            <!--
-                the type of this authenticator. Allowed values are:
-                1. server
-                2. proxy
-            -->
-            <!-- <Type>proxy</Type> -->
-            <!-- the username used to log in to server/proxy -->
-            <!-- <Username>username</Username> -->
-            <!-- the password used to log in to server/proxy -->
-            <!-- <Password>password</Password> -->
+                <!-- 
+                    the pattern that would match a subset of URLs for which this authenticator
+                    would be used
+                -->
+                <!-- <Pattern>regularExpression</Pattern> -->
+                <!-- 
+                    the type of this authenticator. Allowed values are:
+                    1. server
+                    2. proxy
+                -->
+                <!-- <Type>proxy</Type> -->
+                <!-- the username used to log in to server/proxy -->
+                <!-- <Username>username</Username> -->
+                <!-- the password used to log in to server/proxy -->
+                <!-- <Password>password</Password> -->
             <!-- </Credential> -->
         </NetworkAuthenticatorConfig>
 
@@ -427,14 +430,14 @@
         -->
         <TomcatRealm>UserManager</TomcatRealm>
 
-        <!--Option to disable storing of tokens issued by STS-->
-        <DisableTokenStore>false</DisableTokenStore>
+	<!--Option to disable storing of tokens issued by STS-->
+	<DisableTokenStore>false</DisableTokenStore>
 
-        <!--
-         Security token store class name. If this is not set, default class will be
-         org.wso2.carbon.security.util.SecurityTokenStore
-        -->
-        <!--TokenStoreClassName>org.wso2.carbon.identity.sts.store.DBTokenStore</TokenStoreClassName-->
+	<!--
+	 Security token store class name. If this is not set, default class will be
+	 org.wso2.carbon.security.util.SecurityTokenStore
+	-->
+	<!--TokenStoreClassName>org.wso2.carbon.identity.sts.store.DBTokenStore</TokenStoreClassName-->
 
         <XSSPreventionConfig>
             <Enabled>true</Enabled>
@@ -481,6 +484,7 @@
      <FileNameRegEx>^(?!(?:CON|PRN|AUX|NUL|COM[1-9]|LPT[1-9])(?:\.[^.])?$)[^&lt;&gt:"/\\|?*\x00-\x1F][^&lt;&gt:"/\\|?*\x00-\x1F\ .]$</FileNameRegEx>
     -->
     <!--<FileNameRegEx></FileNameRegEx>-->
+
     <!--
        Processors which process special HTTP GET requests such as ?wsdl, ?policy etc.
 
@@ -489,7 +493,7 @@
 
        The value of the Item element is the first parameter in the query string(e.g. ?wsdl)
        which needs special processing
-
+       
        The value of the Class element is a class which implements
        org.wso2.carbon.transport.HttpGetRequestProcessor
     -->
@@ -497,7 +501,6 @@
         <!--Uncomment following info processor if need information page -->
         <!--<Processor>
             <Item>info</Item>
-            <Class>org.wso2.micro.core.transports.util.InfoProcessor</Class>
         </Processor>-->
         <Processor>
             <Item>wsdl</Item>
@@ -521,8 +524,18 @@
             <Class>org.wso2.micro.integrator.transport.handlers.requestprocessors.swagger.format.SwaggerYamlProcessor
             </Class>
         </Processor>
+        <!--Uncomment following to enable swagger support for APIs-->
+        <!--Processor>
+            <Item>swagger.json</Item>
+            <Class>org.wso2.micro.integrator.transport.handlers.requestprocessors.swagger.format.SwaggerJsonProcessor</Class>
+        </Processor>
+        <Processor>
+            <Item>swagger.yaml</Item>
+            <Class>org.wso2.micro.integrator.transport.handlers.requestprocessors.swagger.format.SwaggerYamlProcessor</Class>
+        </Processor-->
     </HttpGetRequestProcessors>
 
+    <!-- Deployment Synchronizer is not supported in Micro Integrator -->
     <DeploymentSynchronizer>
         <Enabled>false</Enabled>
         <AutoCommit>false</AutoCommit>
@@ -535,13 +548,12 @@
     </DeploymentSynchronizer>
 
     <!-- Mediation persistence configurations. Only valid if mediation features are available i.e. ESB -->
-    <MediationConfig>
+   <MediationConfig>
         <LoadFromRegistry>false</LoadFromRegistry>
         <SaveToFile>false</SaveToFile>
         <Persistence>enabled</Persistence>
         <RegistryPersistence>enabled</RegistryPersistence>
     </MediationConfig>
-
 
     <!--
     Server intializing code, specified as implementation classes of org.wso2.carbon.core.ServerInitializer.
@@ -551,33 +563,26 @@
         <!--<Initializer></Initializer>-->
     </ServerInitializers>
 
-    <!--
-    Indicates whether the Carbon Servlet is required by the system, and whether it should be
-    registered
-    -->
-    <RequireCarbonServlet>${require.carbon.servlet}</RequireCarbonServlet>
-
     <StatisticsReporterDisabled>true</StatisticsReporterDisabled>
-
 
     <!--
        Default Feature Repository of WSO2 Carbon.
     -->
     <FeatureRepository>
-        <RepositoryName>default repository</RepositoryName>
-        <RepositoryURL>http://product-dist.wso2.com/p2/carbon/releases/wilkes/</RepositoryURL>
+	    <RepositoryName>default repository</RepositoryName>
+	    <RepositoryURL>http://product-dist.wso2.com/p2/carbon/releases/wilkes/</RepositoryURL>
     </FeatureRepository>
-
-    <!--
-     Configuring EI analytics server details.
-     mediation.flow.statistics.enable has to be set to true in synapse.properties
-     file in addition to these configs
-     -->
-    <Analytics>
-        <!--
+    
+   <!-- 
+    Configuring EI analytics server details. 
+    mediation.flow.statistics.enable has to be set to true in synapse.properties 
+    file in addition to these configs
+    -->    
+   <Analytics>
+        <!-- 
             Server URL of the analytics server. Events are published to this URL
-            This url is in the format <protocol>://<hostname or ip>:<port>.
-            For the HA mode use a comma seperated list of urls of the nalytics nodes to
+            This url is in the format <protocol>://<hostname or ip>:<port>. 
+            For the HA mode use a comma seperated list of urls of the nalytics nodes to 
             enable publishing events to the servers in a round robin manner.
             e.g.; tcp://analytics-server-1:7612,tcp://analytics-server-2:7612
          -->
@@ -588,7 +593,6 @@
         -->
         <Username>admin</Username>
         <Password>admin</Password>
-    </Analytics>
+   </Analytics>
 
-    <!-- Configure JCE provider -->
 </Server>
