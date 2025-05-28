@@ -1,0 +1,2 @@
+# mi-rabbitmq-failover
+
