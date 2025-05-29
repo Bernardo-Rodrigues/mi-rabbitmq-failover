@@ -1,36 +1,49 @@
 services:
+  # Primary RabbitMQ node with management plugin
   rabbit1:
     image: rabbitmq:3-management
     container_name: rabbit1
     environment:
+      # Default credentials
       RABBITMQ_DEFAULT_USER: wso2mi
       RABBITMQ_DEFAULT_PASS: wso2pass
+      # Load predefined config (users, queues, etc.) on first startup
+      RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS: '-rabbitmq_management load_definitions "/etc/rabbitmq/definitions.json"'
+    volumes:
+      # Mounts definitions into container
+      - ./rabbitmq-definitions.json:/etc/rabbitmq/definitions.json
     ports:
-      - "5672:5672"     # RabbitMQ AMQP port
-      - "15672:15672"   # Management UI port
+      - "5672:5672" # AMQP
+      - "15672:15672" # HTTP UI
     networks:
       - rabbitmq-net
 
+  # Secondary RabbitMQ node — for failover
   rabbit2:
     image: rabbitmq:3-management
     container_name: rabbit2
     environment:
       RABBITMQ_DEFAULT_USER: wso2mi
       RABBITMQ_DEFAULT_PASS: wso2pass
+      RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS: '-rabbitmq_management load_definitions "/etc/rabbitmq/definitions.json"'
+    volumes:
+      - ./rabbitmq-definitions.json:/etc/rabbitmq/definitions.json
     ports:
-      - "5673:5672"     # maps host 5673 to container 5672 (alternative AMQP port)
-      - "15673:15672"   # management UI alternative port
+      - "5673:5672"
+      - "15673:15672" 
     networks:
       - rabbitmq-net
 
+  # NGINX reverse proxy for AMQP and management UI failover
   nginx:
     image: nginx:latest
     container_name: nginx-rmq-failover
     volumes:
+      # NGINX config defines stream (TCP) and http proxy rules
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
     ports:
-      - "5679:5679"     # NGINX load balancer port for AMQP traffic
-      - "15679:15679"   # NGINX reverse proxy port for management UI/API
+      - "5679:5679"
+      - "15679:15679"
     depends_on:
       - rabbit1
       - rabbit2
