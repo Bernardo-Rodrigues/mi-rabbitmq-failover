@@ -1,0 +1,50 @@
+services:
+  # Primary RabbitMQ node
+  rabbit1:
+    image: rabbitmq:3-management
+    container_name: rabbit1
+    environment:
+      # Custom credentials
+      RABBITMQ_DEFAULT_USER: wso2mi
+      RABBITMQ_DEFAULT_PASS: wso2pass
+      # Load predefined config (users, queues, etc.) on first startup
+      RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS: '-rabbitmq_management load_definitions "/etc/rabbitmq/definitions.json"'
+    volumes:
+      # Mounts definitions into the container
+      - ./rabbitmq-definitions.json:/etc/rabbitmq/definitions.json
+    networks:
+      - rabbitmq-net
+
+  # Secondary RabbitMQ node — for failover
+  rabbit2:
+    image: rabbitmq:3-management
+    container_name: rabbit2
+    environment:
+      RABBITMQ_DEFAULT_USER: wso2mi
+      RABBITMQ_DEFAULT_PASS: wso2pass
+      RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS: '-rabbitmq_management load_definitions "/etc/rabbitmq/definitions.json"'
+    volumes:
+      - ./rabbitmq-definitions.json:/etc/rabbitmq/definitions.json
+    networks:
+      - rabbitmq-net
+
+  # NGINX reverse proxy for AMQP failover and management UI 
+  nginx:
+    image: nginx:latest
+    container_name: nginx-rmq-failover
+    volumes:
+      # NGINX config defines stream (TCP) and http proxy rules
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - "5679:5679" # AMQP
+      - "15679:15679" # UI for rabbit1
+      - "15680:15680" # UI for rabbit2
+    depends_on:
+      - rabbit1
+      - rabbit2
+    networks:
+      - rabbitmq-net
+
+networks:
+  rabbitmq-net:
+    driver: bridge

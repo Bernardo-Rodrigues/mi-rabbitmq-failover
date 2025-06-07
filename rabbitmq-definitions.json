@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "name": "wso2mi",
+      "password": "wso2pass",
+      "tags": "administrator"
+    }
+  ],
+  "vhosts": [
+    {
+      "name": "/"
+    }
+  ],
+  "permissions": [
+    {
+      "user": "wso2mi",
+      "vhost": "/",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    }
+  ],
+  "queues": [
+    {
+      "name": "mi.messages",
+      "vhost": "/",
+      "durable": true
+    }
+  ]
+}
